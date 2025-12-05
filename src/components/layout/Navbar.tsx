@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sun, Moon, Home } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
+import logo from '@/assets/images/logo.png';
 import { useTheme } from '@/hooks/useTheme';
 import { useScrollPosition } from '@/hooks/useScrollPosition';
 import { Button } from '@/components/ui/button';
@@ -26,20 +27,24 @@ export function Navbar() {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         isScrolled
-          ? 'bg-background/95 backdrop-blur-lg shadow-sm border-b border-border/50'
+          ? 'bg-background/5 backdrop-blur-lg shadow-sm border-b border-border/50'
           : 'bg-transparent'
       )}
+
     >
       <div className="container-width">
         <div className="flex items-center justify-between h-16 md:h-20 px-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-xl gradient-bg flex items-center justify-center">
-              <Home className="w-5 h-5 text-primary-foreground" />
+          <Link to="/" className="flex items-center gap-3 group">
+            <img
+              src={logo}
+              alt="Homeflow Aura"
+              className="w-10 h-10 rounded-xl object-cover"
+            />
+            <div className="flex items-center gap-2">
+              <span className="text-xl font-bold tracking-tight">Tech</span>
+              <span className="text-xl font-bold tracking-tight gradient-text">Nyla</span>
             </div>
-            <span className="text-xl font-bold tracking-tight">
-              Smart<span className="gradient-text">Homes</span>
-            </span>
           </Link>
 
           {/* Desktop Navigation */}

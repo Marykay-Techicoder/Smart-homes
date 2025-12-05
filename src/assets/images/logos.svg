@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="20" fill="#0ea5a4"/>
+  <g transform="translate(20,20)">
+    <circle cx="40" cy="40" r="20" fill="#052e2e" opacity="0.08"/>
+    <path d="M8 44 L24 16 L56 32 L44 68 Z" fill="#ffffff" opacity="0.92"/>
+    <text x="68" y="46" font-family="Inter, Arial, sans-serif" font-size="20" fill="#ffffff" font-weight="600">Aura</text>
+  </g>
+</svg>

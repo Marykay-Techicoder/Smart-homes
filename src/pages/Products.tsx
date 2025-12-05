@@ -90,7 +90,7 @@ const categories = ['All', 'Voice Control', 'Climate', 'Security', 'Lighting', '
 
 export default function Products() {
   return (
-    <div className="pt-20">
+    <div className="pt-2">
       {/* Hero */}
       <section className="section-padding bg-muted/30">
         <div className="container-width text-center">

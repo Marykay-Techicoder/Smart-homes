@@ -30,7 +30,7 @@ export function DevicesSection() {
     <section className="section-padding bg-muted/30">
       <div className="container-width">
         <div className="flex flex-col lg:flex-row gap-12 items-center">
-          <div className="flex-1">
+          <div className="flex-1 ">
             <SectionHeader
               title="Explore Our Innovative AI-Powered Smart Devices"
               description="Enhance everyday living with intelligent features that deliver comfort, control, and convenience throughout your entire home."

@@ -1,4 +1,6 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '@/assets/images/logo.png';
 import { Home, Facebook, Twitter, Instagram, Linkedin, Youtube, Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -36,14 +38,18 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
           <div className="space-y-4">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-xl gradient-bg flex items-center justify-center">
-                <Home className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <span className="text-xl font-bold">
-                Smart<span className="gradient-text">Homes</span>
-              </span>
-            </Link>
+            {/* <Link to="/" className="flex items-center gap-2"> */}
+            <img
+              src={logo}
+              alt="Homeflow Aura"
+              className="w-10 h-10 rounded-xl object-cover"
+            />
+              
+             <div className="flex gap-2">
+               <span className="text-xl font-bold">Tech</span>
+                <span className=" text-xl font-bold gradient-text">Nyla</span>
+             </div>
+            {/* </Link> */}
             <p className="text-muted-foreground text-sm leading-relaxed">
               Transforming houses into intelligent living spaces. Experience the future of home automation with our cutting-edge smart home solutions.
             </p>
@@ -111,15 +117,15 @@ export function Footer() {
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="w-4 h-4" />
-                <span>contact@smarthomes.com</span>
+                <span>technyla@gmail.com</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+234 805 849 6358</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4" />
-                <span>123 Innovation Drive, Tech City</span>
+                <span>New Karu Village Extension, FCT, Abuja</span>
               </div>
             </div>
           </div>

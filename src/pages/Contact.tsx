@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -71,9 +72,9 @@ export default function Contact() {
       {/* Hero */}
       <section className="section-padding bg-muted/30">
         <div className="container-width text-center">
-          <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium bg-primary/10 text-primary mb-4">
+          <Link to="/" className="inline-block px-4 py-1.5 rounded-full text-sm font-medium bg-primary/10 text-primary mb-4">
             Contact Us
-          </span>
+          </Link>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
             Let's Build Your <span className="gradient-text">Smart Home</span>
           </h1>
@@ -104,8 +105,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-muted-foreground">contact@smarthomes.com</p>
-                    <p className="text-muted-foreground">support@smarthomes.com</p>
+                    <p className="text-muted-foreground">technyla@gmail.com</p>
                   </div>
                 </div>
 
@@ -115,8 +115,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                    <p className="text-muted-foreground">Mon-Fri 9AM-6PM EST</p>
+                    <p className="text-muted-foreground">+234 805 849 6358</p>
+                    <p className="text-muted-foreground">+234 906 565 3221</p>
                   </div>
                 </div>
 
@@ -126,8 +126,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Office</h3>
-                    <p className="text-muted-foreground">123 Innovation Drive</p>
-                    <p className="text-muted-foreground">Tech City, TC 12345</p>
+                    <p className="text-muted-foreground">Plot 405, Devilla Estate,</p>
+                    <p className="text-muted-foreground">New Karu Village Extension, FCT, Abuja</p>
                   </div>
                 </div>
               </div>
@@ -251,7 +251,7 @@ export default function Contact() {
                 <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Visit Our Showroom</h3>
                 <p className="text-muted-foreground">
-                  123 Innovation Drive, Tech City, TC 12345
+                 Plot 405, Devilla Estate,New Karu Village Extension, FCT, Abuja
                 </p>
                 <p className="text-muted-foreground">
                   Open Monday - Saturday, 9AM - 6PM

@@ -26,9 +26,9 @@ const features = [
 ];
 
 const miniFeatures = [
-  { icon: Shield, title: 'Advanced Security', description: 'AI-powered threat detection' },
-  { icon: Zap, title: 'Energy Efficient', description: 'Save up to 30% on bills' },
-  { icon: Lock, title: 'Smart Locks', description: 'Keyless entry solutions' },
+    { icon: Shield, title: 'Advanced Security', description: 'AI-powered threat detection' },
+    { icon: Zap, title: 'Energy Efficient', description: 'Save up to 30% on bills' },
+    { icon: Lock, title: 'Smart Locks', description: 'Keyless entry solutions' },
 ];
 
 export function FeaturesSection() {

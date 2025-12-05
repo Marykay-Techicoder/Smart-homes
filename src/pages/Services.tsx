@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom';
 import { Home, Shield, Thermometer, Lightbulb, Mic, Zap, ArrowRight, Check } from 'lucide-react';
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
+import hero1 from '@/assets/images/hero-smart-home.jpg';
+import hero2 from '@/assets/images/home-panel.jpg';
+import hero3 from '@/assets/images/app-ui-screen.jpg';
 import { Button } from '@/components/ui/button';
 import { SectionHeader } from '@/components/common/SectionHeader';
 
@@ -44,26 +48,63 @@ const services = [
 
 export default function Services() {
   return (
-    <div className="pt-20">
+    <div className="pt-24">
       {/* Hero */}
-      <section className="section-padding bg-muted/30">
-        <div className="container-width text-center">
-          <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium bg-primary/10 text-primary mb-4">
-            Our Services
-          </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-            Smart Solutions for <span className="gradient-text">Modern Living</span>
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            From installation to ongoing support, we provide comprehensive smart home services 
-            tailored to your needs and lifestyle.
-          </p>
-          <Link to="/contact">
-            <Button size="lg" className="gradient-bg text-primary-foreground rounded-full px-8 gap-2">
-              Get a Free Consultation
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-          </Link>
+      <section className="section-padding">
+        <div className="container-width">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="text-left">
+              <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium bg-primary/10 text-primary mb-4">
+                Our Services
+              </span>
+              <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
+                <p>Smart Solutions for </p>
+                <p className="gradient-text">Modern Living</p>
+              </h1>
+              <p className="text-l text-muted-foreground max-w-xl mb-6">
+                From installation to ongoing support, we provide comprehensive 
+                smart home services tailored to your needs and lifestyle.
+              </p>
+              <div className="flex items-center gap-4">
+                <Link to="/contact">
+                  <Button size="lg" className="gradient-bg text-primary-foreground rounded-full px-8 gap-2">
+                    Get a Free Consultation
+                    <ArrowRight className="w-5 h-5" />
+                  </Button>
+                </Link>
+                <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Or contact our team →
+                </Link>
+              </div>
+            </div>
+
+            <div>
+              <div className="relative">
+                <Carousel className="rounded-lg shadow-lg">
+                  <CarouselContent className="flex">
+                    <CarouselItem>
+                      <div className="aspect-[16/10] rounded-lg overflow-hidden">
+                        <img src={hero1} alt="Smart Home" className="w-full h-full object-cover" />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[16/10] rounded-lg overflow-hidden">
+                        <img src={hero2} alt="Control Panel" className="w-full h-full object-cover" />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[16/10] rounded-lg overflow-hidden">
+                        <img src={hero3} alt="Mobile App" className="w-full h-full object-cover" />
+                      </div>
+                    </CarouselItem>
+                  </CarouselContent>
+
+                  <CarouselPrevious className="hidden md:block" />
+                  <CarouselNext className="hidden md:block" />
+                </Carousel>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
