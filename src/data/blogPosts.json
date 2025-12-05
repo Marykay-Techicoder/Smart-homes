@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "The Future of Smart Home Automation in 2024",
+    "excerpt": "Discover the latest trends in smart home technology and how AI is revolutionizing the way we interact with our living spaces.",
+    "content": "Smart home technology has evolved dramatically over the past few years. From voice-activated assistants to AI-powered climate control, our homes are becoming increasingly intelligent. In this article, we explore the cutting-edge innovations that are shaping the future of home automation.",
+    "author": "Sarah Johnson",
+    "date": "2024-12-01",
+    "category": "Technology",
+    "readTime": "5 min read",
+    "image": "blog-automation"
+  },
+  {
+    "id": 2,
+    "title": "How Smart Thermostats Can Cut Your Energy Bills by 30%",
+    "excerpt": "Learn how intelligent climate control systems can significantly reduce your energy consumption while keeping your home comfortable.",
+    "content": "Smart thermostats are more than just convenient—they're powerful tools for energy savings. By learning your schedule and preferences, these devices optimize heating and cooling to reduce waste. Our study shows average savings of 30% on energy bills.",
+    "author": "Michael Chen",
+    "date": "2024-11-28",
+    "category": "Energy Savings",
+    "readTime": "4 min read",
+    "image": "blog-thermostat"
+  },
+  {
+    "id": 3,
+    "title": "Setting Up Your First Smart Security System",
+    "excerpt": "A comprehensive guide to installing and configuring smart security devices for maximum home protection.",
+    "content": "Home security has never been more accessible. With smart cameras, door sensors, and motion detectors, you can monitor your home from anywhere. This guide walks you through setting up a complete security ecosystem.",
+    "author": "Emily Rodriguez",
+    "date": "2024-11-25",
+    "category": "Security",
+    "readTime": "7 min read",
+    "image": "blog-security"
+  },
+  {
+    "id": 4,
+    "title": "Voice Control: Transforming How We Live",
+    "excerpt": "Explore how voice assistants are making smart homes more accessible and intuitive for everyone.",
+    "content": "Voice control technology has matured significantly, offering seamless control over every aspect of your smart home. From adjusting lights to playing music, voice commands make home automation effortless and accessible.",
+    "author": "David Park",
+    "date": "2024-11-20",
+    "category": "Innovation",
+    "readTime": "6 min read",
+    "image": "blog-voice"
+  },
+  {
+    "id": 5,
+    "title": "Smart Lighting: Creating the Perfect Ambiance",
+    "excerpt": "Tips and tricks for using smart lighting to enhance your home's atmosphere and improve your wellbeing.",
+    "content": "Smart lighting goes beyond simple on/off controls. With color temperature adjustment and scene settings, you can create the perfect ambiance for any occasion while supporting your natural circadian rhythm.",
+    "author": "Lisa Thompson",
+    "date": "2024-11-15",
+    "category": "Lifestyle",
+    "readTime": "5 min read",
+    "image": "blog-lighting"
+  },
+  {
+    "id": 6,
+    "title": "Integrating All Your Smart Devices: A Complete Guide",
+    "excerpt": "Master the art of creating a unified smart home ecosystem with devices from different manufacturers.",
+    "content": "The key to a truly smart home is seamless integration. Learn how to connect devices from various brands using universal protocols and smart hubs for a cohesive, responsive home automation experience.",
+    "author": "James Wilson",
+    "date": "2024-11-10",
+    "category": "Guides",
+    "readTime": "8 min read",
+    "image": "blog-integration"
+  }
+]
