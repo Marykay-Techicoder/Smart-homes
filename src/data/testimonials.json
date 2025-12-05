@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Jennifer Martinez",
+    "role": "Homeowner",
+    "avatar": "JM",
+    "rating": 5,
+    "text": "Smart Homes transformed our house into a truly intelligent living space. The integration is seamless, and I can control everything from my phone. It's like living in the future!",
+    "location": "San Francisco, CA"
+  },
+  {
+    "id": 2,
+    "name": "Robert Chen",
+    "role": "Tech Enthusiast",
+    "avatar": "RC",
+    "rating": 5,
+    "text": "The voice control system is incredible. Everything's connected from lights to locks, and even climate control. The entire experience feels effortless, elegant, and remarkably intuitive.",
+    "location": "Austin, TX"
+  },
+  {
+    "id": 3,
+    "name": "Amanda Foster",
+    "role": "Interior Designer",
+    "avatar": "AF",
+    "rating": 5,
+    "text": "As a designer, I appreciate how Smart Homes products blend seamlessly with any interior. The sleek devices and intuitive app make home automation both beautiful and functional.",
+    "location": "New York, NY"
+  },
+  {
+    "id": 4,
+    "name": "Marcus Thompson",
+    "role": "Business Owner",
+    "avatar": "MT",
+    "rating": 5,
+    "text": "The energy savings alone paid for the system within a year. Our smart thermostat and lighting reduced our bills by 35%. Best investment we've made for our home.",
+    "location": "Seattle, WA"
+  },
+  {
+    "id": 5,
+    "name": "Sarah Kim",
+    "role": "Working Parent",
+    "avatar": "SK",
+    "rating": 5,
+    "text": "Being able to check on my home and kids from anywhere gives me peace of mind. The security cameras and smart locks are game-changers for busy parents like me.",
+    "location": "Chicago, IL"
+  },
+  {
+    "id": 6,
+    "name": "Daniel Wright",
+    "role": "Retiree",
+    "avatar": "DW",
+    "rating": 5,
+    "text": "I was skeptical about smart home technology, but the team made everything so easy. Voice commands for lights and temperature have made daily life much more comfortable.",
+    "location": "Miami, FL"
+  }
+]
