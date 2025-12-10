@@ -15,9 +15,7 @@ export function AboutSection() {
         
         <div className="mt-4 max-w-4xl">
           <p className="text-l md:text-l lg:text-xl text-foreground leading-relaxed">
-            We create intelligent devices that learn your habits, adapt to your lifestyle, 
-            and give you total control from anywhere in the world. With cutting-edge AI at the core, 
-            our technology brings <span className="gradient-text font-semibold">comfort, safety, and energy savings</span> to your fingertips.
+            We create intelligent devices that gives you total control from anywhere in the world. With cutting-edge smart technology at it core, our technology brings <span className="gradient-text font-semibold">comfort, safety, and energy savings</span> to your fingertips.
           </p>
           
           <Link to="/about" className="inline-block mt-8">
