@@ -9,7 +9,7 @@ import smartLight from '@/assets/images/smart-light.jpg';
 import doorSensor from '@/assets/images/door-sensor.jpg';
 
 const devices = [
-  { name: 'Smart Camera', image: smartCamera, description: 'HD security with AI detection' },
+  { name: 'Smart Camera', image: smartCamera, description: 'HD security with Smart detection' },
   { name: 'Smart Lock', image: smartLock, description: 'Keyless entry & remote access' },
   { name: 'Smart Light', image: smartLight, description: 'Ambient lighting control' },
   { name: 'Door Sensor', image: doorSensor, description: 'Real-time monitoring' },
@@ -32,7 +32,7 @@ export function DevicesSection() {
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           <div className="flex-1 ">
             <SectionHeader
-              title="Explore Our Innovative AI-Powered Smart Devices"
+              title="Explore Our Innovative Smart Devices"
               description="Enhance everyday living with intelligent features that deliver comfort, control, and convenience throughout your entire home."
               centered={false}
             />

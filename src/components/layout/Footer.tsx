@@ -37,18 +37,18 @@ export function Footer() {
       <div className="container-width section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
-          <div className="space-y-4">
-            {/* <Link to="/" className="flex items-center gap-2"> */}
-            <img
-              src={logo}
-              alt="Homeflow Aura"
-              className="w-10 h-10 rounded-xl object-cover"
-            />
-              
-             <div className="flex gap-2">
-               <span className="text-xl font-bold">Tech</span>
-                <span className=" text-xl font-bold gradient-text">Nyla</span>
-             </div>
+            <div className="space-y-4">
+              {/* <Link to="/" className="flex items-center gap-2"> */}
+              <img
+                src={logo}
+                alt="Homeflow Aura"
+                className="w-20 h-20 rounded-xl object-cover"
+              />
+                
+              <div className="flex gap-2">
+                <span className="text-xl font-bold">Tech</span>
+                  <span className=" text-xl font-bold gradient-text">Nyla</span>
+              </div>
             {/* </Link> */}
             <p className="text-muted-foreground text-sm leading-relaxed">
               Transforming houses into intelligent living spaces. Experience the future of home automation with our cutting-edge smart home solutions.

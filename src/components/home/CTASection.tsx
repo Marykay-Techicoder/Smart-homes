@@ -23,20 +23,7 @@ export function CTASection() {
                 Download Smart Homes App Now & Take Control Of Your Smart Home With Ease! 
                 Experience seamless automation at your fingertips.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link to="/contact">
-                  <Button size="lg" variant="secondary" className="rounded-full px-8 h-14 text-lg gap-2 hover-lift">
-                    <Download className="w-5 h-5" />
-                    Download Now
-                  </Button>
-                </Link>
-                <Link to="/services">
-                  <Button size="lg" variant="outline" className="rounded-full px-8 h-14 text-lg gap-2 border-white text-white hover:gradient-bg hover-lift">
-                    Learn More
-                    <ArrowRight className="w-5 h-5" />
-                  </Button>
-                </Link>
-              </div>
+              
             </div>
 
             <div className="flex-1 max-w-md">
