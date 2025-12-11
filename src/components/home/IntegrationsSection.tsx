@@ -12,13 +12,7 @@ const integrations = [
   { icon: DoorOpen, name: 'Smart Door' },
 ];
 
-const partners = [
-  { name: 'Apple', logo: '🍎' },
-  { name: 'Philips', logo: 'PHILIPS' },
-  { name: 'Alexa', logo: 'alexa' },
-  { name: 'BARDI', logo: 'BARDI' },
-  { name: 'Google Home', logo: '🏠' },
-];
+
 
 export function IntegrationsSection() {
   return (
@@ -44,26 +38,7 @@ export function IntegrationsSection() {
           ))}
         </div>
 
-        {/* Partners */}
-        <div className="border-t border-border pt-12">
-          <p className="text-center text-sm text-muted-foreground mb-6">
-            We collaborate with several smart devices
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            {partners.map((partner) => (
-              <div
-                key={partner.name}
-                className="text-xl md:text-2xl font-semibold text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
-              >
-                {partner.logo === '🍎' || partner.logo === '🏠' ? (
-                  <span className="text-3xl">{partner.logo}</span>
-                ) : (
-                  <span className="tracking-wider">{partner.logo}</span>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
+        
       </div>
     </section>
   );

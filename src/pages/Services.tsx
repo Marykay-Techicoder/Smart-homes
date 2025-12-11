@@ -1,50 +1,60 @@
 import { Link } from 'react-router-dom';
-import { Home, Shield, Thermometer, Lightbulb, Mic, Zap, ArrowRight, Check } from 'lucide-react';
+import { ArrowRight, Check } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
 import hero1 from '@/assets/images/hero-smart-home.jpg';
 import hero2 from '@/assets/images/home-panel.jpg';
 import hero3 from '@/assets/images/app-ui-screen.jpg';
 import { Button } from '@/components/ui/button';
 import { SectionHeader } from '@/components/common/SectionHeader';
+import smartSpeaker from '@/assets/images/smart-speaker.jpg';
+import smartThermostat from '@/assets/images/smart-thermostat.jpg';
+import smartCamera from '@/assets/images/smart-camera.jpg';
+import smartLock from '@/assets/images/smart-lock.jpg';
+import smartLight from '@/assets/images/smart-light.jpg';
+import doorSensor from '@/assets/images/door-sensor.jpg';
+import homePanel from '@/assets/images/home-panel.jpg';
+import appUiScreen from '@/assets/images/app-ui-screen.jpg';
 
 const services = [
   {
-    icon: Home,
     title: 'Home Automation',
     description: 'Complete smart home setup with seamless device integration and centralized control.',
     features: ['Multi-room control', 'Scene automation', 'Scheduling', 'Remote access'],
+    image: homePanel,
   },
   {
-    icon: Shield,
     title: 'Security Systems',
-    description: 'Advanced AI-powered security with real-time monitoring and instant alerts.',
+    description: 'Advanced security with real-time monitoring and instant alerts.',
     features: ['24/7 monitoring', 'Motion detection', 'Smart locks', 'Video surveillance'],
+    image: smartCamera,
   },
   {
-    icon: Thermometer,
     title: 'Climate Control',
     description: 'Intelligent HVAC management that learns your preferences and optimizes energy.',
     features: ['Auto-scheduling', 'Zone control', 'Energy reports', 'Weather integration'],
+    image: smartThermostat,
   },
   {
-    icon: Lightbulb,
     title: 'Lighting Solutions',
     description: 'Smart lighting that adapts to your mood, time of day, and activities.',
     features: ['Color control', 'Dimming', 'Motion sensors', 'Circadian rhythm'],
+    image: smartLight,
   },
   {
-    icon: Mic,
     title: 'Voice Integration',
     description: 'Hands-free control with support for all major voice assistants.',
     features: ['Alexa support', 'Google Home', 'Siri compatible', 'Custom commands'],
+    image: smartSpeaker,
   },
   {
-    icon: Zap,
     title: 'Energy Management',
     description: 'Monitor and optimize energy consumption across your entire home.',
     features: ['Real-time tracking', 'Cost analysis', 'Smart plugs', 'Solar integration'],
+    image: appUiScreen,
   },
 ];
+
+const categories = ['All', 'Voice Control', 'Climate', 'Security', 'Lighting', 'Hub', 'Software'];
 
 export default function Services() {
   return (
@@ -62,7 +72,7 @@ export default function Services() {
                 <p className="gradient-text">Modern Living</p>
               </h1>
               <p className="text-l text-muted-foreground max-w-xl mb-6">
-                From installation to ongoing support, we provide comprehensive 
+                From installation to ongoing support, we provide comprehensive
                 smart home services tailored to your needs and lifestyle.
               </p>
               <div className="flex items-center gap-4">
@@ -108,29 +118,43 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* Services Grid with Images */}
       <section className="section-padding">
         <div className="container-width">
+          <SectionHeader
+            title="Our Expertise"
+            description="Professional installation and setup of premium smart home technologies"
+          />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div
                 key={service.title}
-                className="glass-card p-8 hover-lift"
+                className="glass-card overflow-hidden hover-lift group"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="w-14 h-14 rounded-2xl gradient-bg flex items-center justify-center mb-6">
-                  <service.icon className="w-7 h-7 text-primary-foreground" />
+                {/* Service Image */}
+                <div className="aspect-video overflow-hidden bg-muted">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
                 </div>
-                <h3 className="text-2xl font-semibold mb-3">{service.title}</h3>
-                <p className="text-muted-foreground mb-6">{service.description}</p>
-                <ul className="space-y-2">
-                  {service.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-2 text-sm">
-                      <Check className="w-4 h-4 text-primary" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+                
+                {/* Service Content */}
+                <div className="p-8">
+                 
+                  <h3 className="text-2xl font-semibold mb-3">{service.title}</h3>
+                  <p className="text-muted-foreground mb-6">{service.description}</p>
+                  <ul className="space-y-2">
+                    {service.features.map((feature) => (
+                      <li key={feature} className="flex items-center gap-2 text-sm">
+                        <Check className="w-4 h-4 text-primary" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             ))}
           </div>
